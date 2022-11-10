@@ -1,0 +1,49 @@
+{
+    "questions":[
+    { 
+        "id":1,
+        "question": "Ez az első állomás. Mit választasz?",
+        "situation":
+        {
+            "answers":[
+                "Fogat mosok.",
+                "Visszaalszok."
+            ]
+        },
+        "hp":
+        [
+                10,
+                -20
+        ],
+        "morale":
+        [
+            2,
+            -2
+        ]
+            
+    },
+    { 
+        "id":2,
+        "question": "Ez a második állomás. Mit választasz?",
+        "situation":
+        {
+            "answers":[
+                "Fogat mosok.",
+                "Visszaalszok."
+            ]
+        },
+        "hp":
+        [
+                10,
+                -20
+        ],
+        "morale":
+        [
+            2,
+            -2
+        ]
+            
+    },
+    
+    ]
+}
