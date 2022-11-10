@@ -1,5 +1,10 @@
 #include "Page.h"
+#include "json.hpp"
 #include <unordered_map>
+#include <fstream>
+#include <iostream>
+#include <sstream>
+#include <iosfwd>
 
 class Game{
     const std::unordered_map<int,Page> pages;
@@ -8,9 +13,13 @@ class Game{
 
     Game(std::unordered_map<int,Page> pages):pages(pages){}
 
-    Game(std::string path){
-        //TODO read from file
+    Game(){
+    std::ifstream fJson("Story.json");
+    std::stringstream buffer;
+    buffer << fJson.rdbuf();
+    auto json = nlohmann::json::parse(buffer.str());
     }
+    
 
     void run(){
         size_t i=1;
