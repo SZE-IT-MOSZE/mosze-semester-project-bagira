@@ -1,46 +1,20 @@
-#include "Option.h"
+#pragma once
+
+#include <string>
 #include <vector>
-#include <stdexcept>
+
+#include "Option.h"
 
 class Page{
-    const int index;
-    const std::string text;
+    const int id;
+    const std::string question;
     std::vector<Option> options;
 
-    int readSelection() const {
-        int number = 0;
-        std::cin>>number;
-        return number;
-        
-    }
-    public:
+public:
 
-    void show() const{
-        std::cout<<getText()<<std::endl;
-        for(size_t i=0;i<options.size();++i){
-            std::cout<<i+1<<" - "<<options[i].getText()<<std::endl;
-        }
-    }
+    Page(int id, std::string question, std::vector<Option> options);
 
-    int getIndex() const {
-        return index;
-    }
-    std::string getText() const {
-        return text;
-    }
+    int getOptionSize() const;
 
-    int next() const {
-        std::cout<<"?"<<std::endl;
-        try{
-            return options.at(readSelection()-1).getPage();
-        }catch(const std::out_of_range& e){
-            std::cout<<'\n';
-            return -1;
-        }
-    }
-
-
-    Page(int index,std::string text,std::vector<Option> options):index(index),text(text),options(options){}
-
-    Page(int index,std::string text):index(index),text(text){}
+    void showPage() const;
 };

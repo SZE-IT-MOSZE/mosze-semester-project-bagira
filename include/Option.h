@@ -1,20 +1,18 @@
 #pragma once
-#include<iostream>
-#include<string.h>
+
+#include<string>
 
 class Option{
-    const int page;
-    const std::string text;
-    public:
+    std::string answer;
+    const int hp;
+    const int morale;
 
-    Option(int page,std::string text):page(page),text(text){}
+public:
+    Option(std::string answer, int hp, int morale);
 
-    std::string getText() const{
-        return text;
-    }
+    std::string getAnswer() const;
 
-    int getPage() const {
-        return page;
-    }
-    
+    int getHp() const { return hp; }
+
+    int getMorale() const { return morale; }
 };

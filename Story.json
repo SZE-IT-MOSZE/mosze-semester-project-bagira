@@ -1,49 +1,36 @@
 {
-    "questions":[
-    { 
-        "id":1,
-        "question": "Ez az első állomás. Mit választasz?",
-        "situation":
+    "questions": [
         {
-            "answers":[
-                "Fogat mosok.",
-                "Visszaalszok."
+            "id": 1,
+            "question": "Ez az első állomás. Mit választasz?",
+            "options": [
+                {
+                    "answer": "Fogat mosok.",
+                    "hp": 10,
+                    "morale": 2
+                },
+                {
+                    "answer": "Visszaalszok.",
+                    "hp": -20,
+                    "morale": -2
+                }
             ]
         },
-        "hp":
-        [
-                10,
-                -20
-        ],
-        "morale":
-        [
-            2,
-            -2
-        ]
-            
-    },
-    { 
-        "id":2,
-        "question": "Ez a második állomás. Mit választasz?",
-        "situation":
         {
-            "answers":[
-                "Fogat mosok.",
-                "Visszaalszok."
+            "id": 2,
+            "question": "Ez a második állomás. Mit választasz?",
+            "options": [
+                {
+                    "answer": "Felöltözöm.",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Otthonhagyom a telefonom.",
+                    "hp": -10,
+                    "morale": -3
+                }
             ]
-        },
-        "hp":
-        [
-                10,
-                -20
-        ],
-        "morale":
-        [
-            2,
-            -2
-        ]
-            
-    },
-    
+        }
     ]
 }
