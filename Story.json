@@ -13,6 +13,11 @@
                     "answer": "Visszaalszok.",
                     "hp": -20,
                     "morale": -2
+                },
+                {
+                    "answer": "Visszaalszok.",
+                    "hp": -20,
+                    "morale": -2
                 }
             ]
         },
