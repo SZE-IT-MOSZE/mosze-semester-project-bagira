@@ -12,6 +12,7 @@ int Page::getOptionSize() const {
 }
 
 void Page::showPage() const {
+    std::cout<<std::endl;
     std::cout << question << std::endl;
     for(int i=0; i < options.size(); ++i){
         std::cout << i+1 << " - "<< options[i].getAnswer() << std::endl;

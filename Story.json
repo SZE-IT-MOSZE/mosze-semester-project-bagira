@@ -2,36 +2,68 @@
     "questions": [
         {
             "id": 1,
-            "question": "Ez az első állomás. Mit választasz?",
+            "question": "Egy januári szombatra virradó reggelen találod magad, mely során reggel 7:30-kor megszólal az ébresztő. Az első helyszín az otthonod, ahol a reggeli elfogyasztása után rögtön döntéshozatal elé kerülsz; ki kell választanod a sípályához történő utazás módját. Mit választasz??",
             "options": [
                 {
-                    "answer": "Fogat mosok.",
+                    "answer": "Autó.",
                     "hp": 10,
                     "morale": 2
                 },
                 {
-                    "answer": "Visszaalszok.",
-                    "hp": -20,
-                    "morale": -2
+                    "answer": "Busz.",
+                    "hp": 20,
+                    "morale": -1
                 },
                 {
-                    "answer": "Visszaalszok.",
-                    "hp": -20,
-                    "morale": -2
+                    "answer": "Vonat.",
+                    "hp": 20,
+                    "morale": -1
                 }
             ]
         },
         {
             "id": 2,
-            "question": "Ez a második állomás. Mit választasz?",
+            "question": "Mivel az autós utazást választottad, ezért lehetőséged nyílik a városon belüli síkölcsönzőben bérelni felszerelést, ami jóval olcsóbb, mint a sípályán található, viszont nagyobb kitérőt kell tenni. Kívánsz élni ezzel a lehetőséggel? ",
             "options": [
                 {
-                    "answer": "Felöltözöm.",
+                    "answer": "Igen.",
                     "hp": 5,
                     "morale": 1
                 },
                 {
-                    "answer": "Otthonhagyom a telefonom.",
+                    "answer": "Nem.",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Nagyszerű, induljunk a helyi kölcsönzőbe! Vásárlásra nincs lehetőség, így annak fényében kell meghoznod a bérlésre vonatkozó döntést, hogy síelni, avagy snowboardozni szeretnél.",
+            "options": [
+                {
+                    "answer": "Sífelszerelés bérlése",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Snowboard felszerelés bérlése.",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Negyedik állomás",
+            "options": [
+                {
+                    "answer": "Első opció",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Második opció",
                     "hp": -10,
                     "morale": -3
                 }

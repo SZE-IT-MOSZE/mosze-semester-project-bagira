@@ -1,12 +1,9 @@
 /**
  * @file Page.h
  * @author Bagira csapat
- * @brief 
- * @version 0.1
+ * @brief Page class
+ * @version 1.0
  * @date 2022-11-15
- * 
- * @copyright Copyright (c) 2022
- * 
  */
 #pragma once
 
@@ -18,12 +15,13 @@
 /**
  * @brief Represents a page.
  * 
+ * This class is responsible for displaying the questions and the options for the user
  * 
  */
 class Page{
-    const int id;
-    const std::string question;
-    std::vector<Option> options;
+    const int id; ///< The id of the page
+    const std::string question; ///< Text display of the question
+    std::vector<Option> options; ///< A vector that contains all the options for the question
 
 public:
 /**
@@ -35,13 +33,15 @@ public:
  */
     Page(int id, std::string question, std::vector<Option> options);
 /**
- * @brief Get the Option Size object
+ * @brief Get the number of options
  * 
  * @return int 
  */
     int getOptionSize() const;
 /**
  * @brief 
+ * 
+ * Function that shows the page (question, options).
  * 
  */
     void showPage() const;

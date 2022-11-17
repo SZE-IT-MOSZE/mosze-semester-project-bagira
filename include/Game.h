@@ -1,12 +1,9 @@
 /**
  * @file Game.h
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
+ * @author Bagira csapat
+ * @brief Game class
+ * @version 1.0
  * @date 2022-11-10
- * 
- * @copyright Copyright (c) 2022
- * 
  */
 #pragma once
 
@@ -16,11 +13,13 @@
 #include "Page.h"
 
 /**
- * @brief 
+ * @brief Game class
+ * 
+ * This class is responsible for reading from file and for running the game
  * 
  */
 class Game{
-    std::vector<Page> pages;
+    std::vector<Page> pages; ///< A vector that contains all the pages
 
 public:
     /**
@@ -32,12 +31,16 @@ public:
     /**
      * @brief 
      * 
-     * @param filename 
+     * Function which is responsible for reading the story from file 
+     * 
+     * @param filename The name of the file to read from
      * @return std::vector<Page> 
      */
     static std::vector<Page> loadJson(std::string& filename);
     /**
      * @brief 
+     * 
+     * This function is responsible for running the game
      * 
      */
     void run();
