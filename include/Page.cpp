@@ -8,7 +8,7 @@
 Page::Page(int id, std::string question, std::vector<Option> options) : id(id), question(question), options(options) {}
 
 int Page::getOptionSize() const {
-    return options.size();
+    return static_cast<int>(options.size());
 }
 
 void Page::showPage() const {

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Gergo\Desktop\mosze\mosze-semester-project-bagira\build\_deps\googletest-subbuild\CMakeFiles\f66276c3e3ebbe08eaba6c881142eb98\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{4D2DA21B-D862-368D-A79B-A7B863133514}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

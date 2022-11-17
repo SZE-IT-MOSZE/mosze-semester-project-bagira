@@ -1,0 +1,57 @@
+Start testing: Nov 17 14:59 Közép-európai téli idõ
+----------------------------------------------------------
+1/2 Testing: BasicAssertions.CheckIfEmpty
+1/2 Test: BasicAssertions.CheckIfEmpty
+Command: "C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build/Debug/demo-test.exe" "--gtest_filter=BasicAssertions.CheckIfEmpty" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build
+"BasicAssertions.CheckIfEmpty" start time: Nov 17 14:59 Közép-európai téli idõ
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Gergo\Desktop\mosze\mosze-semester-project-bagira\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = BasicAssertions.CheckIfEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicAssertions
+[ RUN      ] BasicAssertions.CheckIfEmpty
+[       OK ] BasicAssertions.CheckIfEmpty (0 ms)
+[----------] 1 test from BasicAssertions (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BasicAssertions.CheckIfEmpty" end time: Nov 17 14:59 Közép-európai téli idõ
+"BasicAssertions.CheckIfEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/2 Testing: BasicAssertions.CheckData
+2/2 Test: BasicAssertions.CheckData
+Command: "C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build/Debug/demo-test.exe" "--gtest_filter=BasicAssertions.CheckData" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build
+"BasicAssertions.CheckData" start time: Nov 17 14:59 Közép-európai téli idõ
+Output:
+----------------------------------------------------------
+Running main() from C:\Users\Gergo\Desktop\mosze\mosze-semester-project-bagira\build\_deps\googletest-src\googletest\src\gtest_main.cc
+Note: Google Test filter = BasicAssertions.CheckData
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BasicAssertions
+[ RUN      ] BasicAssertions.CheckData
+[       OK ] BasicAssertions.CheckData (0 ms)
+[----------] 1 test from BasicAssertions (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"BasicAssertions.CheckData" end time: Nov 17 14:59 Közép-európai téli idõ
+"BasicAssertions.CheckData" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 17 14:59 Közép-európai téli idõ

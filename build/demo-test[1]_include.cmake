@@ -1,0 +1,5 @@
+if(EXISTS "C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build/demo-test[1]_tests.cmake")
+  include("C:/Users/Gergo/Desktop/mosze/mosze-semester-project-bagira/build/demo-test[1]_tests.cmake")
+else()
+  add_test(demo-test_NOT_BUILT demo-test_NOT_BUILT)
+endif()

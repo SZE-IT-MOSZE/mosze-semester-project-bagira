@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Gergo\Desktop\mosze\mosze-semester-project-bagira\build\CMakeFiles\a8520d1a88986c8ef4e3df75ee4484c0\RUN_TESTS_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9854E5F2-838A-38E0-8885-33C3EF1B1656}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
