@@ -2,7 +2,7 @@
     "questions": [
         {
             "id": 1,
-            "question": "Egy januári szombatra virradó reggelen találod magad, mely során reggel 7:30-kor megszólal az ébresztő. Az első helyszín az otthonod, ahol a reggeli elfogyasztása után rögtön döntéshozatal elé kerülsz; ki kell választanod a sípályához történő utazás módját. Mit választasz??",
+            "question": "Egy januári szombatra virradó reggelen találod magad, mely során reggel 7:30-kor megszólal az ébresztő. Az első helyszín az otthonod, ahol a reggeli elfogyasztása után rögtön döntéshozatal elé kerülsz; ki kell választanod a sípályához történő utazás módját. Mit választasz?",
             "options": [
                 {
                     "answer": "Autó.",
@@ -55,15 +55,41 @@
         },
         {
             "id": 4,
-            "question": "Negyedik állomás",
+            "question": "A következő állomásod a sípálya lesz, előtte viszont meg kell hoznod egy fontos döntést. Amennyiben nem egyedül szeretnél nekivágni a túrának, kinek/kiknek a társaságában szeretnéd tölteni ezt a fergetegesnek ígérkező napot?",
             "options": [
                 {
-                    "answer": "Első opció",
+                    "answer": "Egyedül",
                     "hp": 5,
                     "morale": 1
                 },
                 {
-                    "answer": "Második opció",
+                    "answer": "Barátokkal",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Családdal",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "question": "",
+            "options": [
+                {
+                    "answer": "Egyedül",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Barátokkal",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Családdal",
                     "hp": -10,
                     "morale": -3
                 }
