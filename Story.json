@@ -2,7 +2,7 @@
     "questions": [
         {
             "id": 1,
-            "question": "Egy januári szombatra virradó reggelen találod magad, mely során reggel 7:30-kor megszólal az ébresztő. Az első helyszín az otthonod, ahol a reggeli elfogyasztása után rögtön döntéshozatal elé kerülsz; ki kell választanod a sípályához történő utazás módját. Mit választasz?",
+            "question": "Egy januári szombatra virradó reggelen találod magad, mely során reggel 7:30-kor megszólal az ébresztő. Az első helyszín az otthonod, ahol a reggeli elfogyasztása után rögtön döntéshozatal elé kerülsz: ki kell választanod a sípályához történő utazás módját. Mit választasz?",
             "options": [
                 {
                     "answer": "Autó.",
@@ -76,7 +76,7 @@
         },
         {
             "id": 5,
-            "question": "",
+            "question": "Döntést hozhatsz arról, hogy magányban, a gondolataidban elmélyülve szeretnél utazni a sípályára, és majd ott találkoztok, avagy a választott társasággal utazol, és szerzel kalandos útiélményeket.",
             "options": [
                 {
                     "answer": "Egyedül",
@@ -84,16 +84,270 @@
                     "morale": 1
                 },
                 {
-                    "answer": "Barátokkal",
-                    "hp": -10,
-                    "morale": -3
-                },
-                {
-                    "answer": "Családdal",
+                    "answer": "Társasággal",
                     "hp": -10,
                     "morale": -3
                 }
             ]
-        }
+        },
+        {
+            "id": 6,
+            "question": "Remélem biztonságban megérkeztél, és tetszik a hegyi levegő! Mivel tömegközlekedéssel érkeztél, ezért nem volt még lehetőséged a szükséges felszereléseket beszerezni, így erre most kerül lehetőség:",
+            "options": [
+                {
+                    "answer": "Sífelszerelés bérlése",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Snowboard felszerelés bérlése.",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "question": "A sípálya közvetlen bejárátában találod magad, mielőtt belevágnál az egész napos mókába, meg kell venned a napi jegyed, ám azzal találod szemben magad, hogy különböző nehézségi pályákra vonatkozó jegyet vehetsz csak. Szabadon választhatsz, de kérlek, csak egyet, illetve vedd figyelembe azt is, hogy a tudásod nincs Bode Miller olimpiai bajnok szintjén! ",
+            "options": [
+                {
+                    "answer": "Zöld pálya (0-10% lejtő)",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Kék pálya (10-20% lejtő)",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Piros pálya (30-45% lejtő)",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Fekete pálya (45%+ lejtő)",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "question": "Gyorsan szalad az idő, még dél van, és még nem is jutottál el odáig, hogy csússz egy jóízűt... Ennek függvényében hozd meg a következő választást kérlek:",
+            "options": [
+                {
+                    "answer": "Csúsznék",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Éhezem, ennék egy jót!",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Nagyszerű, induljon a dolog lényegi része! Ám ennek érdekében fel kell jutnod valahogy a pálya tetejére: a gyaloglás kimerítő lehet, és fogsz mozogni még ma eleget, a két felvonó nyújtotta lehetőség viszont elég kényelmes.",
+            "options": [
+                {
+                    "answer": "Gyalogos út",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Csákányos felvonó",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Kabinos felvonó",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "question": "A sípályán található Five Guys étteremben nyílik lehetőséged brutális kajakómára szert tenni a mozgás előtt, ez beárnyékolhatja súlyosan a napod, ellenben muszáj a szükséges kalóriamennyiséget bevinned... Mit fogyasztanál szívesen?",
+            "options": [
+                {
+                    "answer": "Hamburger menü",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Sajtburger menü",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Cajun szószos sültkrumpli menü",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "question": "A menühöz illik valami italt is választani, annak érdekében, hogy jobban csússzanak a finom falatok, mit kérsz?",
+            "options": [
+                {
+                    "answer": "Coca-Cola",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Víz",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Milkshake",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "question": "Miután jól laktál, nincs idő sajnos pihenésre a szorított menetrend miatt, így - ha tele gyomorral is - de ideje útnak indulni! Milyen módon szeretnél feljutni a pálya tetejére?",
+            "options": [
+                {
+                    "answer": "Gyalogos út",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Csákányos felvonó",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Kabinos felvonó",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "question": "Amennyiben zöld vagy kék pályára váltottál jegyet, kisebb az esélye annak, hogy baleset ér, más esetben viszont nem árt óvatosnak lenni... Annak függvényében, hogy mit választottál, kérlek hozz egy felelősségteljes döntést, hogy milyen habitussal állsz neki szelni a lejtőket:",
+            "options": [
+                {
+                    "answer": "Óvatos, visszafogott",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Közepesen bátor",
+                    "hp": -10,
+                    "morale": -3
+                },
+                {
+                    "answer": "Vakmerő, félelmet nem ismerő",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "question": "Ajjaj, sajnos baleset ért, kicsit szédülsz, nem találod a helyed a világban, de csak rajtad múlik, hogy mennyire érzed magad segítségre szorulónak... ",
+            "options": [
+                {
+                    "answer": "Segítség kérése",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Csúszás folytatása",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "question": "Sérüléseid ellátták, lehoztak a pályáról, most már biztonságban vagy, de az idő nem áll meg, és az adrenalin tüzel. Kérlek racionális döntést hozz!",
+            "options": [
+                {
+                    "answer": "Pihenés, szünet tartása",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Újracsúszás",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "question": "Valahogy leszédelegtél a pályáról, szerencsére nem lett nagyobb baj... De nagyon elfáradtál, kimerültél, ennek függvényében dönts!",
+            "options": [
+                {
+                    "answer": "Pihenés, szünet tartása",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Újracsúszás",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "question": "A pihenés nagyon jó dolog, de elérkezik lassan az este, a síparadicsomban egy óriási buli van kibontakozóban, amiből állítom, hogy nem szeretnél kimaradni... A szórakozás azonban jelen esetben nincs ingyen, a belépőjegy ára 5.000 Ft. Kihagynád a tél legnagyobb buliját valóban?!",
+            "options": [
+                {
+                    "answer": "Jegy megvásárlása",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Buli kihagyása",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "question": "Szerencsére ezt a csúszást megúsztad, nagyon ügyes voltál, de elérkezik lassan az este, a síparadicsomban egy óriási buli van kibontakozóban, amiből állítom, hogy nem szeretnél kimaradni... A szórakozás azonban jelen esetben nincs ingyen, a belépőjegy ára 5.000 Ft. Kihagynád a tél legnagyobb buliját valóban?!",
+            "options": [
+                {
+                    "answer": "Jegy megvásárlása",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Buli kihagyása",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "question": "Sajnálom, hogy kimerültél, és nem maradt erőd szórakozni, így hát ideje hazaindulni, de mielőtt elindulnál, gyere és nezz be a sípálya shopjába, hogy valami szuvenírt is vigyél haza magaddal!",
+            "options": [
+                {
+                    "answer": "Szuvenír vásárlása",
+                    "hp": 5,
+                    "morale": 1
+                },
+                {
+                    "answer": "Indulás azonnal haza",
+                    "hp": -10,
+                    "morale": -3
+                }
+            ]
+        },
     ]
 }
