@@ -6,6 +6,7 @@
 
 #include "Json.h"
 
+#include "User.h"
 #include "Game.h"
 #include "Page.h"
 #include "Option.h"
@@ -30,8 +31,9 @@ std::vector<Page> Game::loadJson(std::string& filename) {
             std::string answer = opt["answer"];
             int hp = opt["hp"];
             int morale = opt["morale"];
+            int toPage = opt["toPage"];
             
-            Option option(answer, hp, morale);
+            Option option(answer, hp, morale, toPage);
             options.push_back(option);
         }
         Page page(id, question, options);
@@ -45,8 +47,10 @@ std::vector<Page> Game::loadJson(std::string& filename) {
 
     void Game::run() {
         std::string username = "";
+        User* user = new User();
         std::cout << "Kérlek add meg a felhasználóneved: ";
         std::cin >> username;
+        user->setName(username);
         std::cout <<std::endl;
         int selected = 0;  
         int j = 0;      
@@ -65,4 +69,19 @@ std::vector<Page> Game::loadJson(std::string& filename) {
                 }
             }
         }
+
+        /*int pageIndex = pages.at(1).getPageId();
+        while(pageIndex > 0 && pageIndex  < pages.size()) {
+            Page currentPage = pages.at(pageIndex);
+            currentPage.showPage();
+            while (std::cin >> selected && selected < 1 && selected > pages.size()) {
+                std::cout << "Ilyen opció nem létezik, kérem válasszon újra." << std::endl;
+                std::cin.clear();
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            }
+            pageIndex = currentPage.getToPageId(selected);
+        }*/
+
+        std::cout<<"Vége a játéknak!"<<std::endl;
+        delete user;
     }

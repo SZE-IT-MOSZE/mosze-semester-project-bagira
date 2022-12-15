@@ -18,6 +18,7 @@ class Option{
     std::string answer; ///< Text display of the answer
     const int hp; ///< The hp value for the answer
     const int morale; ///< The morale value for the answer
+    const int toPage; ///< The page where we want to continue the story>
 
 public:
 /**
@@ -26,8 +27,9 @@ public:
  * @param answer 
  * @param hp 
  * @param morale 
+ * @param toPage
  */
-    Option(std::string answer, int hp, int morale);
+    Option(std::string answer, int hp, int morale, int toPage);
 /**
  * @brief Get the Answer attribute of an Option
  * 
@@ -46,4 +48,11 @@ public:
  * @return int 
  */
     int getMorale() const { return morale; }
+
+/**
+ * @brief Get the Reference Page of the next story step
+ * 
+ * @return int 
+ */
+    int getToPage() const { return toPage; }
 };

@@ -18,3 +18,11 @@ void Page::showPage() const {
         std::cout << i+1 << " - "<< options[i].getAnswer() << std::endl;
     }
 }
+
+int Page::getPageId() const {
+    return id;
+}
+
+int Page::getToPageId(int selectedOption) const {
+    return options[selectedOption].getToPage();
+}

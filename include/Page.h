@@ -45,4 +45,19 @@ public:
  * 
  */
     void showPage() const;
+
+/**
+ * @brief Get the Id of the page
+ * 
+ * @return int 
+ */
+    int getPageId() const;
+
+/**
+ * @brief Get the id to the next page
+ * 
+ * @param selectedOption 
+ * @return int 
+ */
+    int getToPageId(int selectedOption) const;
 };
