@@ -24,15 +24,15 @@ void Character::updateCharacterStatus(Option optionData) {
 
 int Character::updateStat(int stat, int modifierNumber, int maxStat) {
     int newStat = stat + modifierNumber;
-    // Happy path
-    if (newStat <= maxStat)
-    {
-        return stat += modifierNumber;
-    }
     // if the character dies, the modified stat resets to zero
     if (newStat < 0)
     {
         return 0;
+    }
+    // Happy path
+    if (newStat <= maxStat)
+    {
+        return stat += modifierNumber;
     }
     // the character's stat cannot exceed the maximum stat
     return stat = maxStat;
