@@ -386,7 +386,7 @@
                     "answer": "Szuvenír vásárlása",
                     "hp": 15,
                     "morale": 5,
-                    "toPage": -1
+                    "toPage": 24
                 },
                 {
                     "answer": "Indulás azonnal haza",

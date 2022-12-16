@@ -43,7 +43,7 @@ public:
  * 
  * @return std::string 
  */
-    std::string getName() const;
+    std::string getName() const { return name; }
 /**
  * @brief Get the hp attribute of a Character
  * 

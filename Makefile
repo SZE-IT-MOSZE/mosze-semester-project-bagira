@@ -57,23 +57,13 @@ RM = /usr/local/Cellar/cmake/3.24.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zsolti/Desktop/mosze_final/mosze-semester-project-bagira
+CMAKE_SOURCE_DIR = /Users/zsolti/Desktop/mosze_leadas/mosze-semester-project-bagira
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zsolti/Desktop/mosze_final/mosze-semester-project-bagira
+CMAKE_BINARY_DIR = /Users/zsolti/Desktop/mosze_leadas/mosze-semester-project-bagira
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.24.3/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -95,56 +85,11 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.24.3/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsolti/Desktop/mosze_final/mosze-semester-project-bagira/CMakeFiles /Users/zsolti/Desktop/mosze_final/mosze-semester-project-bagira//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsolti/Desktop/mosze_leadas/mosze-semester-project-bagira/CMakeFiles /Users/zsolti/Desktop/mosze_leadas/mosze-semester-project-bagira//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsolti/Desktop/mosze_final/mosze-semester-project-bagira/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zsolti/Desktop/mosze_leadas/mosze-semester-project-bagira/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -172,89 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named a.out
+# Target rules for targets named snowattack-game
 
 # Build rule for target.
-a.out: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 a.out
-.PHONY : a.out
+snowattack-game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 snowattack-game
+.PHONY : snowattack-game
 
 # fast build rule for target.
-a.out/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/build
-.PHONY : a.out/fast
+snowattack-game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/build
+.PHONY : snowattack-game/fast
 
 #=============================================================================
-# Target rules for targets named test_snowattack
+# Target rules for targets named runTests
 
 # Build rule for target.
-test_snowattack: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_snowattack
-.PHONY : test_snowattack
+runTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 runTests
+.PHONY : runTests
 
 # fast build rule for target.
-test_snowattack/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_snowattack.dir/build.make CMakeFiles/test_snowattack.dir/build
-.PHONY : test_snowattack/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
+runTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/build
+.PHONY : runTests/fast
 
 Test.o: Test.cpp.o
 .PHONY : Test.o
 
 # target to build an object file
 Test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_snowattack.dir/build.make CMakeFiles/test_snowattack.dir/Test.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Test.cpp.o
 .PHONY : Test.cpp.o
 
 Test.i: Test.cpp.i
@@ -262,7 +155,7 @@ Test.i: Test.cpp.i
 
 # target to preprocess a source file
 Test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_snowattack.dir/build.make CMakeFiles/test_snowattack.dir/Test.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Test.cpp.i
 .PHONY : Test.cpp.i
 
 Test.s: Test.cpp.s
@@ -270,15 +163,42 @@ Test.s: Test.cpp.s
 
 # target to generate assembly for a file
 Test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_snowattack.dir/build.make CMakeFiles/test_snowattack.dir/Test.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/Test.cpp.s
 .PHONY : Test.cpp.s
+
+include/Character.o: include/Character.cpp.o
+.PHONY : include/Character.o
+
+# target to build an object file
+include/Character.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Character.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Character.cpp.o
+.PHONY : include/Character.cpp.o
+
+include/Character.i: include/Character.cpp.i
+.PHONY : include/Character.i
+
+# target to preprocess a source file
+include/Character.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Character.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Character.cpp.i
+.PHONY : include/Character.cpp.i
+
+include/Character.s: include/Character.cpp.s
+.PHONY : include/Character.s
+
+# target to generate assembly for a file
+include/Character.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Character.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Character.cpp.s
+.PHONY : include/Character.cpp.s
 
 include/Game.o: include/Game.cpp.o
 .PHONY : include/Game.o
 
 # target to build an object file
 include/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Game.cpp.o
 .PHONY : include/Game.cpp.o
 
 include/Game.i: include/Game.cpp.i
@@ -286,7 +206,7 @@ include/Game.i: include/Game.cpp.i
 
 # target to preprocess a source file
 include/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Game.cpp.i
 .PHONY : include/Game.cpp.i
 
 include/Game.s: include/Game.cpp.s
@@ -294,7 +214,7 @@ include/Game.s: include/Game.cpp.s
 
 # target to generate assembly for a file
 include/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Game.cpp.s
 .PHONY : include/Game.cpp.s
 
 include/Option.o: include/Option.cpp.o
@@ -302,7 +222,8 @@ include/Option.o: include/Option.cpp.o
 
 # target to build an object file
 include/Option.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Option.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Option.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Option.cpp.o
 .PHONY : include/Option.cpp.o
 
 include/Option.i: include/Option.cpp.i
@@ -310,7 +231,8 @@ include/Option.i: include/Option.cpp.i
 
 # target to preprocess a source file
 include/Option.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Option.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Option.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Option.cpp.i
 .PHONY : include/Option.cpp.i
 
 include/Option.s: include/Option.cpp.s
@@ -318,7 +240,8 @@ include/Option.s: include/Option.cpp.s
 
 # target to generate assembly for a file
 include/Option.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Option.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Option.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Option.cpp.s
 .PHONY : include/Option.cpp.s
 
 include/Page.o: include/Page.cpp.o
@@ -326,7 +249,8 @@ include/Page.o: include/Page.cpp.o
 
 # target to build an object file
 include/Page.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Page.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Page.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Page.cpp.o
 .PHONY : include/Page.cpp.o
 
 include/Page.i: include/Page.cpp.i
@@ -334,7 +258,8 @@ include/Page.i: include/Page.cpp.i
 
 # target to preprocess a source file
 include/Page.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Page.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Page.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Page.cpp.i
 .PHONY : include/Page.cpp.i
 
 include/Page.s: include/Page.cpp.s
@@ -342,7 +267,8 @@ include/Page.s: include/Page.cpp.s
 
 # target to generate assembly for a file
 include/Page.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/include/Page.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/include/Page.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runTests.dir/build.make CMakeFiles/runTests.dir/include/Page.cpp.s
 .PHONY : include/Page.cpp.s
 
 main.o: main.cpp.o
@@ -350,7 +276,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -358,7 +284,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -366,7 +292,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/a.out.dir/build.make CMakeFiles/a.out.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/snowattack-game.dir/build.make CMakeFiles/snowattack-game.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -376,21 +302,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... a.out"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... test_snowattack"
+	@echo "... runTests"
+	@echo "... snowattack-game"
 	@echo "... Test.o"
 	@echo "... Test.i"
 	@echo "... Test.s"
+	@echo "... include/Character.o"
+	@echo "... include/Character.i"
+	@echo "... include/Character.s"
 	@echo "... include/Game.o"
 	@echo "... include/Game.i"
 	@echo "... include/Game.s"
