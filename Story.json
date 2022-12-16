@@ -6,20 +6,20 @@
             "options": [
                 {
                     "answer": "Autó.",
-                    "hp": 10,
-                    "morale": 2,
+                    "hp": -5,
+                    "morale": 0,
                     "toPage": 2
                 },
                 {
                     "answer": "Busz.",
-                    "hp": 20,
-                    "morale": -1,
+                    "hp": 0,
+                    "morale": -2,
                     "toPage": 4
                 },
                 {
                     "answer": "Vonat.",
-                    "hp": 20,
-                    "morale": -1,
+                    "hp": 0,
+                    "morale": -2,
                     "toPage": 4                    
                 }
             ]
@@ -31,13 +31,13 @@
                 {
                     "answer": "Igen.",
                     "hp": 5,
-                    "morale": 1,
+                    "morale": -2,
                     "toPage": 3
                 },
                 {
                     "answer": "Nem.",
                     "hp": -10,
-                    "morale": -3,
+                    "morale": -5,
                     "toPage": 4
                 }
             ]
@@ -48,14 +48,14 @@
             "options": [
                 {
                     "answer": "Sífelszerelés bérlése",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 10,
+                    "morale": 2,
                     "toPage": 4
                 },
                 {
                     "answer": "Snowboard felszerelés bérlése.",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": 3,
                     "toPage": 4
                 }
             ]
@@ -66,20 +66,20 @@
             "options": [
                 {
                     "answer": "Egyedül",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 0,
+                    "morale": -6,
                     "toPage": 7
                 },
                 {
                     "answer": "Barátokkal",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 0,
+                    "morale": 5,
                     "toPage": 5
                 },
                 {
                     "answer": "Családdal",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 0,
+                    "morale": 6,
                     "toPage": 5
                 }
             ]
@@ -90,14 +90,14 @@
             "options": [
                 {
                     "answer": "Egyedül",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -10,
+                    "morale": -5,
                     "toPage": 6
                 },
                 {
                     "answer": "Társasággal",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 10,
+                    "morale": 3,
                     "toPage": 6
                 }
             ]
@@ -108,14 +108,14 @@
             "options": [
                 {
                     "answer": "Sífelszerelés bérlése",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 10,
+                    "morale": 2,
                     "toPage": 7
                 },
                 {
                     "answer": "Snowboard felszerelés bérlése.",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": 3,
                     "toPage": 7
                 }
             ]
@@ -126,8 +126,8 @@
             "options": [
                 {
                     "answer": "Zöld pálya (0-10% lejtő)",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -20,
+                    "morale": -5,
                     "toPage": 8
                 },
                 {
@@ -138,14 +138,14 @@
                 },
                 {
                     "answer": "Piros pálya (30-45% lejtő)",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": 3,
                     "toPage": 8
                 },
                 {
                     "answer": "Fekete pálya (45%+ lejtő)",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 10,
+                    "morale": 5,
                     "toPage": 8
                 }
             ]
@@ -156,14 +156,14 @@
             "options": [
                 {
                     "answer": "Csúsznék",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -5,
+                    "morale": 5,
                     "toPage": 9
                 },
                 {
                     "answer": "Éhezem, ennék egy jót!",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": -2,
                     "toPage": 10
                 }
             ]
@@ -174,20 +174,20 @@
             "options": [
                 {
                     "answer": "Gyalogos út",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -10,
+                    "morale": -5,
                     "toPage": 13
                 },
                 {
                     "answer": "Csákányos felvonó",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -5,
+                    "morale": -2,
                     "toPage": 13
                 },
                 {
                     "answer": "Kabinos felvonó",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": 5,
                     "toPage": 13
                 }
             ]
@@ -198,20 +198,20 @@
             "options": [
                 {
                     "answer": "Hamburger menü",
-                    "hp": 5,
+                    "hp": -5,
                     "morale": 1,
                     "toPage": 11
                 },
                 {
                     "answer": "Sajtburger menü",
                     "hp": -10,
-                    "morale": -3,
+                    "morale": 3,
                     "toPage": 11
                 },
                 {
                     "answer": "Cajun szószos sültkrumpli menü",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -3,
+                    "morale": 2,
                     "toPage": 11
                 }
             ]
@@ -222,20 +222,20 @@
             "options": [
                 {
                     "answer": "Coca-Cola",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -30,
+                    "morale": 3,
                     "toPage": 12
                 },
                 {
                     "answer": "Víz",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 20,
+                    "morale": 2,
                     "toPage": 12
                 },
                 {
                     "answer": "Milkshake",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -15,
+                    "morale": -5,
                     "toPage": 12
                 }
             ]
@@ -246,20 +246,20 @@
             "options": [
                 {
                     "answer": "Gyalogos út",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -10,
+                    "morale": -5,
                     "toPage": 13
                 },
                 {
                     "answer": "Csákányos felvonó",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -5,
+                    "morale": -2,
                     "toPage": 13
                 },
                 {
                     "answer": "Kabinos felvonó",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 5,
+                    "morale": 5,
                     "toPage": 13
                 }
             ]
@@ -270,20 +270,20 @@
             "options": [
                 {
                     "answer": "Óvatos, visszafogott",
+                    "hp": 10,
+                    "morale": -4,
+                    "toPage": 14
+                },
+                {
+                    "answer": "Közepesen bátor",
                     "hp": 5,
                     "morale": 1,
                     "toPage": 14
                 },
                 {
-                    "answer": "Közepesen bátor",
-                    "hp": -10,
-                    "morale": -3,
-                    "toPage": 14
-                },
-                {
                     "answer": "Vakmerő, félelmet nem ismerő",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 10,
+                    "morale": 4,
                     "toPage": 14
                 }
             ]
@@ -294,14 +294,14 @@
             "options": [
                 {
                     "answer": "Segítség kérése",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -30,
+                    "morale": -10,
                     "toPage": 15
                 },
                 {
                     "answer": "Csúszás folytatása",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -60,
+                    "morale": 5,
                     "toPage": 16
                 }
             ]
@@ -312,14 +312,14 @@
             "options": [
                 {
                     "answer": "Pihenés, szünet tartása",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 15,
+                    "morale": -5,
                     "toPage": 17
                 },
                 {
                     "answer": "Újracsúszás",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -30,
+                    "morale": 5,
                     "toPage": 18
                 }
             ]
@@ -330,14 +330,14 @@
             "options": [
                 {
                     "answer": "Pihenés, szünet tartása",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 15,
+                    "morale": -5,
                     "toPage": 17
                 },
                 {
                     "answer": "Újracsúszás",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -30,
+                    "morale": 5,
                     "toPage": 18
                 }
             ]
@@ -348,14 +348,14 @@
             "options": [
                 {
                     "answer": "Jegy megvásárlása",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -5,
+                    "morale": 8,
                     "toPage": 20
                 },
                 {
                     "answer": "Buli kihagyása",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 20,
+                    "morale": -12,
                     "toPage": 19
                 }
             ]
@@ -366,14 +366,14 @@
             "options": [
                 {
                     "answer": "Jegy megvásárlása",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": -5,
+                    "morale": 8,
                     "toPage": 20
                 },
                 {
                     "answer": "Buli kihagyása",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": 20,
+                    "morale": -12,
                     "toPage": 19
                 }
             ]
@@ -384,14 +384,122 @@
             "options": [
                 {
                     "answer": "Szuvenír vásárlása",
-                    "hp": 5,
-                    "morale": 1,
+                    "hp": 15,
+                    "morale": 5,
                     "toPage": -1
                 },
                 {
                     "answer": "Indulás azonnal haza",
-                    "hp": -10,
-                    "morale": -3,
+                    "hp": -50,
+                    "morale": -10,
+                    "toPage": -1
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "question": "Zseniális, indulhat a buli! Ajánlatos előre tervezni, így lehetőséged van last-minute szállást foglalni, avagy sodródsz az éjszaka árjával, így nem garantált a pihenés lehetősége az átmulatott éjszaka után...",
+            "options": [
+                {
+                    "answer": "Szállás foglalása",
+                    "hp": 10,
+                    "morale": 1,
+                    "toPage": 21
+                },
+                {
+                    "answer": "Sodródás az éjszakával",
+                    "hp": -20,
+                    "morale": 5,
+                    "toPage": 22
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "question": "Kérlek válassz, hogy melyik szállásajánlatot választanád!",
+            "options": [
+                {
+                    "answer": "Egyszerű franciaágy, mindenféle csicsázás nélkül",
+                    "hp": 5,
+                    "morale": -10,
+                    "toPage": 22
+                },
+                {
+                    "answer": "Lakosztály, ahol a buli után mehet az afterparty is...",
+                    "hp": -25,
+                    "morale": 9,
+                    "toPage": 22
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "question": "Az eseményen 4 koncert is lesz, a különböző színpadokon, ezek közül lehetőséged nyílik választani EGYET, mivel sajnálatos módon egy idősávban zajlanak. Amennyiben nincs kedved koncerten részt venni, úgy marad a diszkó jellegű zenés-táncos mulatság.",
+            "options": [
+                {
+                    "answer": "Menjünk koncertre!",
+                    "hp": 5,
+                    "morale": 5,
+                    "toPage": 23
+                },
+                {
+                    "answer": "Jó nekem a laza bulizás.",
+                    "hp": -5,
+                    "morale": -1,
+                    "toPage": 24
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "question": "A négy koncertlehetőségeket alább látod. A program úgy van összeállítva, hogy a magyar zenei palettán sokak megtalálják a számításaikat!",
+            "options": [
+                {
+                    "answer": "30Y",
+                    "hp": 5,
+                    "morale": 1,
+                    "toPage": 24
+                },
+                {
+                    "answer": "Azahriah",
+                    "hp": 5,
+                    "morale": 1,
+                    "toPage": 24
+                },
+                {
+                    "answer": "Gáspár Laci",
+                    "hp": -5,
+                    "morale": 1,
+                    "toPage": 24
+                },
+                {
+                    "answer": "Blahalouisiana",
+                    "hp": 5,
+                    "morale": 1,
+                    "toPage": 24
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "question": "Véget ért számodra ez a kalandos nap! Reméljük, érdekesnek találtad, ennek függvényében kérlek válassz az alábbi értékelések közül!",
+            "options": [
+                {
+                    "answer": "Nagyon izgalmasnak találtam az egyes programokat, részt vennék újra!",
+                    "hp": 35,
+                    "morale": 5,
+                    "toPage": -1
+                },
+                {
+                    "answer": "Hiányosságérzetem maradt sajnos, lehettek volna színesebbek a programok.",
+                    "hp": 0,
+                    "morale": 0,
+                    "toPage": -1
+                },
+                {
+                    "answer": "Egyáltalán nem éreztem jól magam sajnos... ",
+                    "hp": -35,
+                    "morale": -5,
                     "toPage": -1
                 }
             ]

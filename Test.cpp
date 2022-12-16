@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
 #include "include/Option.h"
-#include "include/Option.cpp"
-#include "include/Page.cpp"
 #include "include/Page.h"
 
 // Demonstrate some basic assertions

@@ -35,7 +35,7 @@ public:
  * 
  * @return std::string 
  */
-    std::string getAnswer() const;
+    std::string getAnswer() const { return answer; }
 /**
  * @brief Get the hp attribute of an Option
  * 
