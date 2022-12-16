@@ -26,3 +26,7 @@ int Page::getPageId() const {
 int Page::getToPageId(int selectedOption) const {
     return options[selectedOption].getToPage();
 }
+
+std::vector<Option> Page::getOptions() const {
+    return options;
+}

@@ -6,7 +6,7 @@
 
 #include "Json.h"
 
-#include "User.h"
+#include "Character.h"
 #include "Game.h"
 #include "Page.h"
 #include "Option.h"
@@ -47,41 +47,35 @@ std::vector<Page> Game::loadJson(std::string& filename) {
 
     void Game::run() {
         std::string username = "";
-        User* user = new User();
+        Character user;
         std::cout << "Kérlek add meg a felhasználóneved: ";
         std::cin >> username;
-        user->setName(username);
+        user.setName(username);
         std::cout <<std::endl;
-        int selected = 0;  
-        int j = 0;      
-        for(int i = 0; i < pages.size(); i++) {
-            pages.at(i).showPage();
-            while(true) {
-                if (std::cin >> selected && (selected <= pages.at(i).getOptionSize() && selected > 0)) {
-                    if(selected == 2 || selected == 3){
-                        i+=2;
-                    }
-                    break; 
-                } else {
-                    std::cout << "Ilyen opció nem létezik, kérem válasszon újra." << std::endl;
-                    std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-                }
-            }
-        }
-
-        /*int pageIndex = pages.at(1).getPageId();
-        while(pageIndex > 0 && pageIndex  < pages.size()) {
-            Page currentPage = pages.at(pageIndex);
+        int selected = 0;
+        int pageIndex = pages.at(0).getPageId();
+        while(pageIndex > 0) {
+            std::cin.clear();
+            // get our character's conditons
+            user.getStatus();
+            Page currentPage = pages.at(pageIndex-1);
             currentPage.showPage();
-            while (std::cin >> selected && selected < 1 && selected > pages.size()) {
+            std::cin >> selected;
+            if (selected <= 0)
+            {
+                break;
+            }
+            // the our choice is greater than the options we have
+            while (selected  > pages.at(pageIndex-1).getOptionSize()) {
                 std::cout << "Ilyen opció nem létezik, kérem válasszon újra." << std::endl;
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+                std::cin >> selected;
+
             }
-            pageIndex = currentPage.getToPageId(selected);
-        }*/
+            user.updateCharacterStatus(currentPage.getOptions().at(selected-1));
+            pageIndex = currentPage.getToPageId(selected-1);
+        }
 
         std::cout<<"Vége a játéknak!"<<std::endl;
-        delete user;
     }

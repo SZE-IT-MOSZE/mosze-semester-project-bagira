@@ -60,4 +60,7 @@ public:
  * @return int 
  */
     int getToPageId(int selectedOption) const;
+
+
+    std::vector<Option> getOptions() const;
 };
