@@ -56,17 +56,24 @@ std::vector<Page> Game::loadJson(std::string& filename) {
         int pageIndex = pages.at(0).getPageId();
         while(pageIndex > 0) {
             std::cin.clear();
+            // if the page not found or below the first id, the story ends
+            if (pageIndex < 1 || pageIndex > pages.size())
+            {
+                break;
+            }
             // get our character's conditons
             user.getStatus();
             Page currentPage = pages.at(pageIndex-1);
             currentPage.showPage();
             std::cin >> selected;
+            // if our choice is 0 or negative (or anything else than a number) the story ends
             if (selected <= 0)
             {
                 break;
             }
-            // the our choice is greater than the options we have
-            while (selected  > pages.at(pageIndex-1).getOptionSize()) {
+            // check if our choice number is greater than the options we have
+            while (selected  > pages.at(pageIndex-1).getOptionSize()) 
+            {
                 std::cout << "Ilyen opció nem létezik, kérem válasszon újra." << std::endl;
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -74,6 +81,14 @@ std::vector<Page> Game::loadJson(std::string& filename) {
 
             }
             user.updateCharacterStatus(currentPage.getOptions().at(selected-1));
+            // if the character doesn't have enough stats, the story ends
+            if (!user.theCharacterCanContinue())
+            {
+                user.initiateFinalDeath();
+                user.getStatus();
+                break;
+            }
+            // the story continues with the next page (unless the story ends)
             pageIndex = currentPage.getToPageId(selected-1);
         }
 

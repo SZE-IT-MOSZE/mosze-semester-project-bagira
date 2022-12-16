@@ -20,6 +20,8 @@
 class Character{
     const int MAX_HP = 100; ///< Characters max HP, can't be more than that
     const int MAX_MORALE = 15; ///< Characters max morale, can't be more than that
+    const std::string LOW_HP = "Nem érzed magad túl jól. Figyelj oda az egészségedre!"; ///< Character is under 20% HP
+    const std::string LOW_MORALE = "Kezdesz stresszessé válni. Próbálj meg lazulni is kicsit!"; ///< Character is under 20% Morale
 
 
     std::string name; ///< Text display of the answer
@@ -89,5 +91,37 @@ public:
  */
     void updateCharacterStatus(Option optionData);
 
-    int updateStat(int stat, int modifierNumber, int maxAmount);
+/**
+ * @brief logic behind updating a single stat
+ * 
+ * @param stat 
+ * @param modifierNumber modifier stat
+ * @param maxStat const
+ * @return with the calculated new stat
+ */
+    int updateStat(int stat, int modifierNumber, int maxStat);
+
+/**
+ * @brief Checks if the character can continue with their current stats
+ * 
+ * @return true then the story continues
+ * @return false the character died / lost interest, the story ends
+ */
+    bool theCharacterCanContinue();
+
+/**
+ * @brief sends a warning message to the user when their characters stats are critical
+ * A stat is critical when it's value drops below 20%
+ * 
+ * @param stat
+ * @param maxStat const 
+ * @param warningMessage const
+ */
+    void checkCharacterCondition(int stat, int maxStat, std::string warningMessage);
+
+/**
+ * @brief Display message if the character cannot continue
+ * 
+ */
+    void initiateFinalDeath() const;
 };
